@@ -1,0 +1,23 @@
+{
+    "manifest_version": 2,
+
+    "name": "CQ cycles",
+    "description": "Cycles through useful cq tools and pages",
+    "version": "1.0",
+
+    "permissions": [
+        "cookies",
+        "tabs",
+        "http://localhost:4502/",
+        "contextMenus"
+    ],
+    "background": {
+        "persistent": false,
+        "scripts": ["background.js", "core.js"]
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_popup": "popup.html"
+    }
+}
+
